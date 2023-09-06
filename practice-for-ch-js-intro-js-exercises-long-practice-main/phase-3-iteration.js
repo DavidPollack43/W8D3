@@ -13,4 +13,16 @@ Array.prototype.bubbleSort = function() {
     return this
 }
 
-console.log([9,8,17,5,4].bubbleSort())
+// console.log([9,8,17,5,4].bubbleSort())
+
+String.prototype.substrings = function() {
+    let array = []
+    for (let i = 0; i < this.length; i++){
+        for (let j = i + 1; j < this.length + 1; j++){
+            array.push(this.slice(i, j))
+        } 
+    }
+    return array;
+}
+
+console.log("dad".substrings())
