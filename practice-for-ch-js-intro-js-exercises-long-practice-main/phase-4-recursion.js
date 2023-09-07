@@ -60,3 +60,11 @@ function fibonacci(n) {
 }
 
 // console.log(fibonacci(5))
+
+function deepDup(arr) {
+    if (arr.length === 1) {
+        return [arr[0]]
+    }
+    let newArr = deepDup(arr.pop)
+    newArr.push
+}
