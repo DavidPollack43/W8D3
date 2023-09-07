@@ -44,4 +44,19 @@ function exponent2(base, exp) {
     }
 }
 
-console.log(exponent2(3, 2))
+// console.log(exponent2(3, 2))
+
+// function fibonacci(n) {
+//     if (n === 0){
+//         return []
+//     }else if (n === 1) {
+//         return [1]
+//     }else if (n === 2){
+//         return [1,1]
+//     }else{
+//         let array = fibonacci(n-1)
+//         return array.concat([array[array.length - 1] + array[array.length-2]])
+//     }
+// }
+
+// console.log(fibonacci(5))
