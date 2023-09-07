@@ -21,3 +21,27 @@ function sumRec(arr) {
 
 // console.log(sumRec([1,2,3])) // 6
 
+function exponent1(base, exp) {
+    if (exp === 0) {
+        return 1
+    }
+    return exponent1(base, exp-1) * base
+}
+
+// console.log(exponent1(3, 3))
+
+function exponent2(base, exp) {
+    if (exp === 0) {
+        return 1
+    } else if (exp === 1) {
+        return base
+    }
+    if (exp % 2 === 0) {
+        return exponent2(base, exp/2) ** exp
+    }
+    if (exp % 2 === 1) {
+        return exponent2(base, (exp-1)/2) ** exp
+    }
+}
+
+console.log(exponent2(3, 2))
